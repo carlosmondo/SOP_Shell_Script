@@ -20,7 +20,7 @@ if [ $result ]; then
 
   option=0
   while [ $option -ne 3 ]; do
-    echo -e "Selecione uma opção: \n1. Ver Saldo \n2. Ver Extrato \n3. Sair \nDigite sua opção:"
+    echo -n "Selecione uma opção: \n1. Ver Saldo \n2. Ver Extrato \n3. Sair \nDigite sua opção:"
     read option
 
     if [ $option -eq 1 ]; then
@@ -31,7 +31,9 @@ if [ $result ]; then
       echo "Excluindo arquivos..."
       rm saldo.txt
       rm extrato.txt
-
+      rm lista_usuarios.txt
+      rm -r $user
+      
       echo "Obg, volte sempre"
       echo "Bank Shell"
     else 
