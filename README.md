@@ -62,8 +62,8 @@ $ Bank Shell
 ```
 
 Link dos arquivos:
-https://raw.githubusercontent.com/leandersonandre/shell-script/master/lista_usuarios.txt
-https://github.com/leandersonandre/shell-script/blob/master/lisbon.tar.gz?raw=true
-https://github.com/leandersonandre/shell-script/blob/master/newyork.tar.gz?raw=true
-https://github.com/leandersonandre/shell-script/blob/master/london.tar.gz?raw=true
-https://github.com/leandersonandre/shell-script/blob/master/lisbon.tar.gz?raw=true
+- https://raw.githubusercontent.com/leandersonandre/shell-script/master/lista_usuarios.txt
+- https://github.com/leandersonandre/shell-script/blob/master/lisbon.tar.gz?raw=true
+- https://github.com/leandersonandre/shell-script/blob/master/newyork.tar.gz?raw=true
+- https://github.com/leandersonandre/shell-script/blob/master/london.tar.gz?raw=true
+- https://github.com/leandersonandre/shell-script/blob/master/lisbon.tar.gz?raw=true
