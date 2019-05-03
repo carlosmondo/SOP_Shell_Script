@@ -1,6 +1,3 @@
-# SOP - Shell Script
-Script para consultar informações sobre uma conta bancária de um cliente. 
-
 # Problema
 Desenvolva um script para consultar informações sobre a conta bancária de um cliente. 
 
