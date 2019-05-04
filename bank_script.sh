@@ -1,4 +1,5 @@
 #!/usr/bash
+#Ubunto 16.04
 
 echo "\nBanco Shell Script"
 echo -n "Informe seu usuário: "
