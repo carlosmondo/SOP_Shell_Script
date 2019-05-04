@@ -10,12 +10,9 @@ wget -q https://raw.githubusercontent.com/leandersonandre/shell-script/master/li
 result=$(cat lista_usuarios.txt | grep -w "$user")
 
 if [ $result ]; then
-    echo "\nUsuário encontrado."
-    echo "Baixando dados do usuário..."
-    wget -q https://github.com/leandersonandre/shell-script/blob/master/$user.tar.gz?raw=true
+    echo "\nUsuário encontrado.\nBaixando dados do usuário..."
+    wget -qO- https://github.com/leandersonandre/shell-script/blob/master/$user.tar.gz?raw=true | tar -xz
     
-    mv $user.tar.gz?raw=true $user.tar.gz
-    tar -xf $user.tar.gz
     echo "Download completo"
     cd $user
     option=0
@@ -32,13 +29,14 @@ if [ $result ]; then
         elif [ $option -eq 3 ]; then
             echo "Excluindo arquivos..."
             cd ..
-            rm -r lista_usuarios.txt $user.tar.gz $user
+            rm -r lista_usuarios.txt $user
+            echo "Obg, volte semppre\nBank Shell"
         else
-            echo "Opção invalida\nObg, volte semppre\nBank Shell"
+            echo "Opção invalida"
         fi
     done
 else
-    echo "O usuário $user não encontrado\n"
+    echo "Usuário $user não encontrado\n"
     
     if [ lista_usuarios.txt ]; then
         rm lista_usuarios.txt
