@@ -22,18 +22,19 @@ if [ $result ]; then
         read option
         echo
         
-        if [ $option -eq 1 ]; then
-            cat saldo.txt
-        elif [ $option -eq 2 ]; then
-            cat extrato.txt
-        elif [ $option -eq 3 ]; then
-            echo "Excluindo arquivos..."
-            cd ..
-            rm -r lista_usuarios.txt $user
-            echo "Obg, volte semppre\nBank Shell"
-        else
-            echo "Opção invalida"
-        fi
+        case $option in
+            1)  cat saldo.txt 
+                ;;
+            2)  cat extrato.txt 
+                ;;
+            3)  echo "Excluindo arquivos..."
+                cd ..
+                rm -r lista_usuarios.txt $user
+                echo "Obg, volte semppre\nBank Shell" 
+                ;;
+            *)  echo "Opção inválida" 
+                ;;
+        esac
     done
 else
     echo "Usuário $user não encontrado\n"
